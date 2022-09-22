@@ -21,7 +21,7 @@ const Add = () => {
     var data = {
       name: user.name,
       email: user.email,
-      address:user.address
+    
     };
 
     userService.create(data)
@@ -29,9 +29,9 @@ const Add = () => {
         setuser({
           id: response.data.id,
           name: response.data.name,
+          
           email: response.data.email,
-          address:response.data.address,
-          published: response.data.published
+         
         });
         setSubmitted(true);
 
@@ -62,7 +62,7 @@ const Add = () => {
       ) : (
         <div className="col-md-6">
           <div className="form-group">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name">Full Name</label>
             <input
               type="text"
               className="form-control"
@@ -86,18 +86,7 @@ const Add = () => {
               name="email"
             />
           </div>
-          <div className="form-group">
-            <label htmlFor="address">Address</label>
-            <input
-              type="text"
-              className="form-control"
-              id="address"
-              required
-              value={user.address}
-              onChange={handleInputChange}
-              name="address"
-            />
-          </div>
+        
 
           <button onClick={saveuser} className="btn btn-success btn-sm">
             Submit

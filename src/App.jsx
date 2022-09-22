@@ -2,8 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { Link, Switch, Route } from "react-router-dom";
-import user from "./components/user";
-//import about from "./components/about";
+import User from "./components/User";
 import Add from "./components/Add";
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
           <li className="nav-item">
             <Link to={"/add"} className="nav-link">
               Add New User
-              
             </Link> 
           </li>
         </div>
@@ -32,10 +30,8 @@ function App() {
 
       <div className="container mt-3">
         <Switch>
-          <Route exact path={["/", "/users"]} component={user} />
+          <Route exact path={["/", "/users"]} component={User} />
           <Route  path="/add" component={Add} /> 
-
-         
         </Switch>
       </div>
     </div>
