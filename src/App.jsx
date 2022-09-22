@@ -24,6 +24,7 @@ function App() {
           <li className="nav-item">
             <Link to={"/add"} className="nav-link">
               Add New User
+              
             </Link> 
           </li>
         </div>
