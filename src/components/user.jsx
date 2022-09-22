@@ -81,18 +81,18 @@ export default function Users() {
            <a href="mailto://{selectedusers.email}" className="text-lowercase">   {selectedusers.email}</a>
             </div>
            
-            <div>
+            {/* <div>
               <label>
                 <strong>Address:</strong>
               </label>{" "}
-              {selectedusers.address.city}
-            </div>
-            <div>
+              {selectedusers.address.street}, {selectedusers.address.city}
+            </div> */}
+            {/* <div>
               <label>
                 <strong>Completed:</strong>
               </label>{" "}
               {selectedusers.completed ? "Pending" : "Published"}
-            </div>
+            </div> */}
             <button
               className=" btn btn-sm btn-danger "
               onClick={() => {removeAll(selectedusers.id);
