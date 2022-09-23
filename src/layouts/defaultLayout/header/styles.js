@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const HeaderBox = styled.div`
   width: 100%;
   height: 3rem;
-  background: #f1f1f1;
-  border-bottom: 1px solid #ccc;
+  background: #f5f5f5;
+  border-bottom: 2px solid #ccc;
   color: #333;
   position: fixed;
   left: 0;

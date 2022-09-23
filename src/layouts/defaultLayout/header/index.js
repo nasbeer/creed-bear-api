@@ -18,7 +18,7 @@ const Header = props => {
                 <div className="btns">
                 <NavLink exact to='/' className="btn home">Home</NavLink>
                 <NavLink exact to='/add' className="btn add">Add User</NavLink>
-                <button className="btn logout" onClick={handleLogOut}>Log out</button>
+                <button className="btn logout" onClick={handleLogOut}>Logout</button>
                 </div>
                 }
             </HeaderContainer>

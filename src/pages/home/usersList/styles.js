@@ -4,7 +4,8 @@ export const Row = styled.div`
   width: 100%;
   height: 90px;
   padding: 15px 0;
-  border-bottom: 1px dotted #f2f2f2;
+  
+  border-bottom: 1px dotted #ccc;
   position: relative;
   &>div{
     display: inline-block;
@@ -15,9 +16,15 @@ export const Row = styled.div`
     transform: translateY(-50%);
     &.delete{
       right: 0px;
+      background:#e81500;
+      border:1px solid #e81500;
+      color:#fff;
     }
     &.edit{
       right: 70px;
+      background:#00ac69;
+      border:1px solid #00ac69;
+      color:#fff;
     }
   }
 `;
@@ -48,6 +55,7 @@ export const UserInfo = styled.div`
   &.load_more{
     margin-top:5px;
     margin-bottom:5px;
+   
   }
 `;
 export const Text = styled.div`

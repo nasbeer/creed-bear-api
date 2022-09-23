@@ -20,10 +20,10 @@ const GlobalStyle = createGlobalStyle`
         list-style: none;
       }
       a{
-          color: #009688;
+          color: #0077c9;
           text-decoration: none;
           &:hover{
-           color: #26A69A;      
+           color: #006bb4;      
           }
       }
       *{
@@ -69,6 +69,7 @@ const GlobalStyle = createGlobalStyle`
         padding: .5rem .75rem;
         font-size: 1rem;
         color: #495057;
+        border-radius:5px;
         background-color: #fff;
         background-clip: padding-box;
         border:1px solid #ced4da;
@@ -76,7 +77,7 @@ const GlobalStyle = createGlobalStyle`
         &:focus {
             color: #495057;
             background-color: #fff;
-            border-color: #009688;
+            border-color: #0077c9;
             outline: 0;
         }
         &.error{
@@ -101,20 +102,20 @@ const GlobalStyle = createGlobalStyle`
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        border: 1px solid #009688;
+        border: 1px solid #0077c9;
         padding: .5rem .75rem;
         font-size: 1.35rem;
         line-height: 1.5;
         border-radius: .25rem;
         color: #fff;
-        background-color: #009688;
+        background-color: #0077c9;
         transition: color .5s ease-in-out,background-color .5s ease-in-out,border-color .5s ease-in-out;
         &:not(:disabled):not(.disabled) {
             cursor: pointer;
         }
         &:not(:disabled):not(.disabled):hover{
-          background-color:#00796B;
-          border-color:#00796B ;
+          background-color:#006bb4;
+          border-color:#006bb4 ;
         }
         &:focus{
           outline: none;
