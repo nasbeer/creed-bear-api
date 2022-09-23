@@ -52,6 +52,7 @@ export class Login extends Component {
                 value={email}
                 onChange={this.handleChange}
               />
+              <label>Test Email: eve.holt@reqres.in</label>
               {submitted && !email && (
                 <div className="error-block  email">Email is required.</div>
               )}
@@ -65,6 +66,7 @@ export class Login extends Component {
                 value={password}
                 onChange={this.handleChange}
               />
+              <label>Test Password: cityslicka</label>
               {submitted && !password && (
                 <div className="error-block password">Password is required.</div>
               )}
