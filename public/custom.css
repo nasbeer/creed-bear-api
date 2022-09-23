@@ -1,10 +1,3 @@
-.avatar{
-    border-radius: 100%;
-    box-shadow:2px 2px 2px 2px #ccc;
-    width:64px;
-    height:64px;
-    object-fit: cover;
-}
-.card-body{
-    min-height: 193px !important;
+.text-center{
+    text-align: center !important;
 }
