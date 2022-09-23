@@ -2,7 +2,6 @@ import React from "react";
 import { Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/home/home";
 import Login from "./pages/login/login";
-import Signup from "./pages/signup/signup";
 import Edit from "./pages/edit/edit";
 import Add from "./pages/add/add";
 import NotFound from "./pages/notFound";
@@ -17,7 +16,6 @@ const RouterComponent = () => {
         <PrivateRoute path="/add" exact component={Add} />
         <PrivateRoute path="/user/:id/edit" exact component={Edit} />
         <Route path="/login" exact component={Login} />
-        <Route path="/signup" exact component={Signup} />
         <Route path="*" component={NotFound} />
       </Switch>
     </Router>
