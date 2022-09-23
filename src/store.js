@@ -5,7 +5,6 @@ import createSagaMiddleware from "redux-saga";
 import { createLogger } from "redux-logger";
 import UsersList from "./pages/home/usersList";
 import Login from "./pages/login";
-import Signup from "./pages/signup";
 import Edit from "./pages/edit";
 import Add from "./pages/add";
 import { all } from "redux-saga/effects";
@@ -15,7 +14,6 @@ const rootSaga = function*() {
   yield all([
     ...UsersList.sagas,
     ...Login.sagas,
-    ...Signup.sagas,
     ...Edit.sagas,
     ...Add.sagas
   ]);
@@ -30,7 +28,6 @@ const rootReducer = (state, action) => {
     routing: routerReducer,
     usersList: UsersList.reducers,
     login: Login.reducers,
-    signup: Signup.reducers,
     edit: Edit.reducers,
     add: Add.reducers
   })(state, action);
@@ -39,7 +36,7 @@ const store = createStore(
   rootReducer,
   composeWithDevTools(
     applyMiddleware(sagaMiddleware,
-        //logger,
+        logger,
         routerMiddleware(history)
     )
   )
