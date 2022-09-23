@@ -73,7 +73,7 @@ export class Login extends Component {
             </div>
             <div className="form-group">
               <button className="form-btn" disabled={loading}>
-                  {loading ? <><i className="fas fa-spinner  fa-spin"/> loading ...</> : "Login"}
+                  {loading ? <><i className="fa fa-spinner  fa-spin"/> loading ...</> : "Login"}
               </button>
             </div>
           </form>
